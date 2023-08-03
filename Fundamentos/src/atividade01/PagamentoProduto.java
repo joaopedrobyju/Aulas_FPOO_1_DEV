@@ -6,7 +6,7 @@ public class PagamentoProduto {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("Informe seu nome: ");
+        System.out.println("Informe o nome do Produto: ");
         String nomeProduto = scanner.next();
         
         System.out.println("Informe o preço: ");
@@ -20,7 +20,12 @@ public class PagamentoProduto {
         System.out.println("Informe a forma de pagamento: ");
         char formaPag = scanner.next().charAt(0);
         
-        if (formaPag == 'D') {
+        System.out.println("Produto: " + produto.getNome());
+        System.out.println("Valor do Produto: R$ %.2f " + produto.getValor());
+        System.out.println("Quantidade de produtos: " + produto.getQtdeProduto());
+        System.out.println("Valor total: R$ " + produto.CalcularValorTotal());
+        
+         if (formaPag == 'D') {
             double valorTotal = produto.CalcularValorTotal();
             if (valorTotal <= 100.0) {
                 valorTotal *= 0.95;
@@ -40,8 +45,5 @@ public class PagamentoProduto {
             System.out.println("");
             System.out.println("Valor da parcela: R$: " + valorParcela);
         }
-        
-        System.out.println("Produto: " + produto.nome);
-        System.out.println("Valor total: R$ " + produto.CalcularValorTotal());
     }
 }

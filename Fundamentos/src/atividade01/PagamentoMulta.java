@@ -1,39 +1,29 @@
 package atividade01;
 import atividade01_classes.Multa;
+import atividade01_classes.Veiculo;
 import java.util.Scanner;
 public class PagamentoMulta {
     public static void main(String[] args) {
          Scanner scanner = new Scanner(System.in);
          
-         System.out.println("Informe a marca de seu veículo: ");
-         String nomeCarro = scanner.next();
-         
+         try {
          System.out.println("Informe a velocidade de seu veiculo: ");
          int velocidadeCarro = scanner.nextInt();
+         Veiculo veiculo = new Veiculo(velocidadeCarro);
+          Multa multa = new Multa();
          
-         System.out.println("Informe a quantidade que excedeu o valor limite: ");
-         int valorPorKm = scanner.nextInt();
-         
-         Multa multa = new Multa(velocidadeCarro);
-         
-         char pagMulta = scanner.next().charAt(0);
-         
-         if (pagMulta == 80){
-             double valorTotal = multa.ValorTotal();
-             double valorTotalMulta = multa.ValorTotalComMulta();
-             if (valorTotal < 80){
-                 System.out.println("Você não foi multado");
+         double valorMulta = multa.ValorTotalComMulta(veiculo.getVelocidade());
+          
+         if (valorMulta > 0){
+                 System.out.printf("Você foi multado! Valor da multa: R$ %.2f\n", valorMulta);
              } else{
-                 System.out.println("Você foi multado" + valorTotalMulta);
+                 System.out.println("Você não foi multado");
              }
-         }
-         
-     
-         
-         
-         
-    }
-    
-   
-    
+
+        } catch (Exception e) {
+            System.out.println("Valor invalido. Digite um número válido");
+        } finally {
+            scanner.close();
+        }
+}
 }

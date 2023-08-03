@@ -1,22 +1,17 @@
 package atividade01_classes;
 
 public class Multa {
-    String nomeCarro;
-    int velocidadeCarro;
-    double valorTotalMulta;
+     
+   private int limiteVelocidadeCarro = 80 ;
+   private  double valorporKm = 5.0;
 
-    public Multa(int velocidadeCarro) {
-        this.velocidadeCarro = velocidadeCarro;
-        verificarMulta();
-    }  
-    private void verificarMulta(){
-        if (velocidadeCarro > 80){
-            
-        }
-    }
-    public double ValorTotalComMulta(){
-        this.valorTotalMulta = this.velocidadeCarro + (valorPorKm * 5);
-        return this.valorTotalMulta;
+    public double ValorTotalComMulta(double velocidade){
+       if (velocidade > limiteVelocidadeCarro) {
+           double kmAcima = velocidade - limiteVelocidadeCarro;
+           return kmAcima * valorporKm;
+       } else {
+           return 0;
+       }
     }
     
 }
