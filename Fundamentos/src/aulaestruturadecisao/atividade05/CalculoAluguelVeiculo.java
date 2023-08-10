@@ -12,8 +12,8 @@ public class CalculoAluguelVeiculo {
                 + "\nHyundai Hb20 (3)");
         int nomeOpcoes = scanner.nextInt();
         
-        System.out.println("Informe a quantidade de pratos ");
-        int valorPorKm = scanner.nextInt();
+        System.out.println("Informe o valor do Km rodado: ");
+        double valorPorKm = scanner.nextDouble();
        
         double valorDiaria = 0;
         double valorConta;
@@ -22,15 +22,15 @@ public class CalculoAluguelVeiculo {
         if (nomeOpcoes == 1) {
         valorDiaria = 98.00;
         valorConta = valorDiaria * valorPorKm;
-            System.out.println("O valor do almoco sera de: R$" + valorConta);
+            System.out.println("O valor do alugel sera de: R$" + valorConta);
         } else if (nomeOpcoes == 2){
            valorDiaria = 79.00;
            valorConta = valorDiaria * valorPorKm;
-            System.out.println("O valor do almoco sera de: R$" + valorConta);
+            System.out.println("O valor do aluguel sera de: R$" + valorConta);
         } else if (nomeOpcoes == 3){
             valorDiaria = 102.00;
            valorConta = valorDiaria * valorPorKm;
-            System.out.println("O valor do almoco sera de: R$" + valorConta);
+            System.out.println("O valor do aluguel sera de: R$" + valorConta);
         }
     }
 }
