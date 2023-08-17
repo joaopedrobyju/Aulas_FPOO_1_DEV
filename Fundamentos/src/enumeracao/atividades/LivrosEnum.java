@@ -10,5 +10,20 @@ package enumeracao.atividades;
  */
 public enum LivrosEnum {
     
-    FICCAO, ROMANCE, DRAMA, SUSPENSE, TERROR, AVENTURA
+    FICCAO("Ficção"), 
+    ROMANCE("Romance"),
+    DRAMA("Drama"),
+    SUSPENSE("Suspense"),
+    TERROR("Terror"),
+    AVENTURA("Aventura");
+    
+     private String livros;
+     
+     private LivrosEnum(String livros){
+         this.livros = livros;
+     }
+     
+     public String getStatus(){
+         return this.livros;
+     }
 }

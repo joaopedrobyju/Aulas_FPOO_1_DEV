@@ -9,9 +9,9 @@ package enumeracao.atividades;
  * @author Aluno
  */
 public class RedesSociais {
-    private RedesSociasEnum redes;
+    private String redes;
 
-    public RedesSociais(RedesSociasEnum redes) {
+    public RedesSociais(String redes) {
         this.redes = redes;
     }
 
@@ -19,6 +19,9 @@ public class RedesSociais {
     public String toString() {
         return "RedesSociais{" + "redes=" + redes + '}';
     }
+    
+    
+   
 
     
     

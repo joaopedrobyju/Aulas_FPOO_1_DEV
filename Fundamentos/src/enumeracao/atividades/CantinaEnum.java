@@ -10,5 +10,22 @@ package enumeracao.atividades;
  */
 public enum CantinaEnum {
     
-    COXINHA, ENROLADINHO, ESFIHA, SUCO_LARANJA, KIBE, SUCO_UVA, REFRIGERANTE, LANCHE
+    COXINHA("Coxinha"),
+    ENROLADINHO("Enroladinho"),
+    ESFIHA("Esfiha"),
+    SUCO_LARANJA("Suco de Laranja"),
+    KIBE("Slagado de Kibe"),
+    SUCO_UVA("Suco de Uva"),
+    REFRIGERANTE("Refrigerante de Guaraná"),
+    LANCHE("X-Tudo");
+    
+    private String produtos;
+    
+    private CantinaEnum(String produtos) {
+        this.produtos = produtos;
+    }
+    
+    public String getStatus(){
+        return this.produtos;
+    }
 }

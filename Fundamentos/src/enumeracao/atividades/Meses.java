@@ -12,17 +12,19 @@ import enumeracao.TipoUsuarioEnum;
  */
 public class Meses {
     private int mes_valor;
-    private MesesEnum tipo;
+    private String mes;
 
-    public Meses(int mes_valor, MesesEnum tipo) {
+    public Meses(int mes_valor, String mes) {
         this.mes_valor = mes_valor;
-        this.tipo = tipo;
+        this.mes = mes;
     }
 
     @Override
     public String toString() {
-        return "Meses{" + "mes_valor=" + mes_valor + ", tipo=" + tipo + '}';
+        return "Meses{" + "mes_valor=" + mes_valor + ", mes=" + mes + '}';
     }
+
+    
 
     
     

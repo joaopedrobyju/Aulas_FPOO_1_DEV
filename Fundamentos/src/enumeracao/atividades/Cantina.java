@@ -12,9 +12,9 @@ public class Cantina {
     private String produto;
     private double valor;
     private int qtde_itens;
-    private CantinaEnum itens;
+    private String itens;
 
-    public Cantina(String produto, double valor, int qtde_itens, CantinaEnum itens) {
+    public Cantina(String produto, double valor, int qtde_itens, String itens) {
         this.produto = produto;
         this.valor = valor;
         this.qtde_itens = qtde_itens;
@@ -25,6 +25,10 @@ public class Cantina {
     public String toString() {
         return "Cantina{" + "produto=" + produto + ", valor=" + valor + ", qtde_itens=" + qtde_itens + ", itens=" + itens + '}';
     }
+    
+    
+    
+    
 
     
     

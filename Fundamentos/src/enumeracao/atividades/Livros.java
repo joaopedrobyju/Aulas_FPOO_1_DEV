@@ -13,9 +13,9 @@ public class Livros {
     private String nome_livro;
     private double valor;
     private int qtde_livros;
-    private LivrosEnum generos_livro;
+    private String generos_livro;
 
-    public Livros(String nome_livro, double valor, int qtde_livros, LivrosEnum generos_livro) {
+    public Livros(String nome_livro, double valor, int qtde_livros, String generos_livro) {
         this.nome_livro = nome_livro;
         this.valor = valor;
         this.qtde_livros = qtde_livros;
@@ -26,6 +26,10 @@ public class Livros {
     public String toString() {
         return "Livros{" + "nome_livro=" + nome_livro + ", valor=" + valor + ", qtde_livros=" + qtde_livros + ", generos_livro=" + generos_livro + '}';
     }
+    
+    
+
+    
 
     
     

@@ -10,5 +10,19 @@ package enumeracao.atividades;
  */
 public enum RedesSociasEnum {
     
-    NOTICIAS, STREAMING, MENSAGENS, VIDEOS, JOGOS
+    NOTICIAS("Noticias"), 
+    STREAMING("Streaming"),
+    MENSAGENS("Mensagens"), 
+    VIDEOS("Videos"), 
+    JOGOS("Jogos");
+    
+    private String redes_social;
+    
+    private RedesSociasEnum(String redes_social){
+        this.redes_social = redes_social;
+    }
+    
+    public String getStatus(){
+        return this.redes_social;
+    }
 }
