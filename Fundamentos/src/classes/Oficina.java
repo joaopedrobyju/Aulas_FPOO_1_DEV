@@ -10,13 +10,23 @@ package classes;
  */
 public class Oficina {
     public static void main(String[] args) {
-        Carro golf = new Carro("Golf", "Preto","Volkswagen", 2000, 4);
+        Carro golf = new Carro("Golfo", corEnum.ROXO, "Volkswagen", 2010, 4, 0);
+       
         
+       golf.trocarDeMarcha(MarchaEnum.PREMEIRA_MARCHA);
+        System.out.println(golf);
+       golf.trocarDeMarcha(MarchaEnum.SEGUNDA_MARCHA);
+        System.out.println(golf);
+       golf.trocarDeMarcha(MarchaEnum.QUARTA_MARCHA);
+        System.out.println(golf);
+  
+        
+        System.out.println("-----------------------------------------------");
         golf.andar(50);
         golf.andar(100);
         
         golf.freiar(50);
         
-        System.out.println(golf);
+        System.out.println(golf );
     }
 }
