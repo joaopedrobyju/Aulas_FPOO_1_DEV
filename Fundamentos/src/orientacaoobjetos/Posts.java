@@ -4,6 +4,8 @@
  */
 package orientacaoobjetos;
 
+import enumeracao.TipoUsuarioEnum;
+
 /**
  *
  * @author Aluno
@@ -23,22 +25,27 @@ public class Posts implements ClassificacaoPosts{
     public String toString() {
         return "Posts{" + "titulo=" + titulo + ", descricao=" + descricao + ", comentarios=" + comentarios + '}';
     }
+
+    @Override
+    public int PostsComuns() {
+       return COMUM;
+    }
+
+    @Override
+    public int PostsLegais() {
+        return LEGAL;
+    }
+
+    @Override
+    public int PostsSuperLegais() {
+        return SUPER_LEGAL;
+    }
     
     
     
     
 
-    public int PostsComuns(){
-        return COMUK;
-    }
     
-    public int PostsLegais(){
-        return LEGAL;
-    }
-    
-    public int PostsSuperLegais(){
-        return SUPER_LEGAL;
-    }
     
     
     

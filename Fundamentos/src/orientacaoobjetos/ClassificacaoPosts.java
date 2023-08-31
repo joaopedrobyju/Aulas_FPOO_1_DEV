@@ -9,7 +9,11 @@ package orientacaoobjetos;
  * @author Aluno
  */
 public interface ClassificacaoPosts {
-    int COMUK = 1;
+    int COMUM = 1;
     int LEGAL = 3;
     int SUPER_LEGAL = 5;
+    
+    public int PostsComuns();
+    public int PostsLegais();
+    public int PostsSuperLegais();
 }
