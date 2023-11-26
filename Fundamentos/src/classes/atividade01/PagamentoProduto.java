@@ -1,7 +1,15 @@
-package atividade01;
-import java.util.Scanner;
-import atividade01_classes.Pagamento;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package classes.atividade01;
 
+import java.util.Scanner;
+
+/**
+ *
+ * @author user
+ */
 public class PagamentoProduto {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -15,7 +23,7 @@ public class PagamentoProduto {
         System.out.println("Informe a quantidade: ");
         int qtdeProdutos = scanner.nextInt();
         
-        Pagamento produto = new Pagamento(nomeProduto, valorProduto, qtdeProdutos);
+        Produto produto = new Produto(nomeProduto, valorProduto, qtdeProdutos);
         
         System.out.println("Informe a forma de pagamento: ");
         char formaPag = scanner.next().charAt(0);

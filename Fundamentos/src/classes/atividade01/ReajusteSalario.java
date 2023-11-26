@@ -1,7 +1,16 @@
-package atividade01;
-import atividade01_classes.Salario;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package classes.atividade01;
+
 import java.util.Scanner;
-public class ModificacaoSalario {
+
+/**
+ *
+ * @author user
+ */
+public class ReajusteSalario {
     public static void main(String[] args) {
          Scanner scanner = new Scanner(System.in);
         
@@ -19,7 +28,4 @@ public class ModificacaoSalario {
          System.out.printf("O valor do novo salario e de: R$ " + novoSalario);
          
     }
-   
-
-
 }

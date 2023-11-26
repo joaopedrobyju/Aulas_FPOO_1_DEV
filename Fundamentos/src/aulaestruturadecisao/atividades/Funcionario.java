@@ -1,8 +1,15 @@
-package aulaestruturadecisao.atividade01;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package aulaestruturadecisao.atividades;
 
+/**
+ *
+ * @author user
+ */
 public class Funcionario {
-    
-    String cargo;
+     String cargo;
     double salario;
     int INSS;
     double convenio;
@@ -61,4 +68,3 @@ public class Funcionario {
         return this.salarioTotal;
     }
 }
-

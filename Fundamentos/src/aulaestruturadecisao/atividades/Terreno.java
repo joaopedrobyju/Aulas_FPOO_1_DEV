@@ -1,7 +1,15 @@
-package aulaestruturadecisao.atividade02;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package aulaestruturadecisao.atividades;
 
+/**
+ *
+ * @author user
+ */
 public class Terreno {
-double largura;
+    double largura;
 double comprimento;
 double valorPorM;
 double valorTotal;
@@ -54,8 +62,4 @@ double areaTotal;
         this.valorTotal = (this.comprimento * this.largura) * this.valorPorM;
         return (int) this.valorTotal;
     }
-    
-    
-
-
 }

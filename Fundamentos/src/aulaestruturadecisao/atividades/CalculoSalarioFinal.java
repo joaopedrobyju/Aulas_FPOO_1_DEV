@@ -1,10 +1,17 @@
-package aulaestruturadecisao.atividade01;
-import java.util.Scanner;
-import aulaestruturadecisao.atividade01.Funcionario;
-import aulaestruturadecisao.elseif;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package aulaestruturadecisao.atividades;
 
+import java.util.Scanner;
+
+/**
+ *
+ * @author user
+ */
 public class CalculoSalarioFinal {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Informe o seu cargo: ");

@@ -1,8 +1,15 @@
-package atividade01_classes;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package classes.atividade01;
 
+/**
+ *
+ * @author user
+ */
 public class Multa {
-     
-   private int limiteVelocidadeCarro = 80 ;
+    private int limiteVelocidadeCarro = 80 ;
    private  double valorporKm = 5.0;
 
     public double ValorTotalComMulta(double velocidade){
@@ -13,5 +20,4 @@ public class Multa {
            return 0;
        }
     }
-    
 }

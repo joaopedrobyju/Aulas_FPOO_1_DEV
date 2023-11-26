@@ -1,5 +1,15 @@
-package atividade01;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package classes.atividade01;
+
 import java.util.Scanner;
+
+/**
+ *
+ * @author user
+ */
 public class MediaAritmetica {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -15,7 +25,10 @@ public class MediaAritmetica {
     double media = calcularMedia(valores);
         System.out.println("A media aritmetica e: " + media);
     }
+
+
     
     public static void calcularMedia
-            
+    
 }
+

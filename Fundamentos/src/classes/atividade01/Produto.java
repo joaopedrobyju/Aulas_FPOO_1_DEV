@@ -1,6 +1,14 @@
-package atividade01_classes;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package classes.atividade01;
 
-public class Pagamento {
+/**
+ *
+ * @author user
+ */
+public class Produto {
     String nome;
     double valor;
     int qtdeProduto;
@@ -39,7 +47,7 @@ public class Pagamento {
     }
 
 
-    public Pagamento(String nome, double valor, int qtdeProduto) {
+    public Produto(String nome, double valor, int qtdeProduto) {
         this.nome = nome;
         this.valor = valor;
         this.qtdeProduto = qtdeProduto;
@@ -49,5 +57,4 @@ public class Pagamento {
         this.valorTotal = this.valor * this.qtdeProduto;
         return this.valorTotal;
     }
-    
 }
